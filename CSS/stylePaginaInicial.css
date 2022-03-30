@@ -27,6 +27,7 @@ body {
     background-color: var(--color-tecla);
     border: outset;
     margin: 5px;  
+    cursor: pointer;
 
 }
 
@@ -47,6 +48,7 @@ body {
     height: 126px;
     background-color: var(--color-tecla-menor);
     margin: 0px 35px;
+    cursor: pointer;
 }
 
 .teclas_pretas{
@@ -55,4 +57,27 @@ body {
     position: relative;
     
 
+}
+
+.tecla1:hover, .tecla2:hover, .tecla3:hover, .tecla4:hover {
+    border: 1px solid black;
+}
+
+.teclaPreta1:hover, .teclaPreta2:hover, .teclaPreta3:hover {
+    border: 1px solid white;
+}
+
+#play {
+    background-color: transparent;
+    border: none;
+    font-family: 'inter', sans-serif;
+    font-size: 25px ;
+    color: white;
+    cursor: pointer;
+}
+
+.teclaPreta1, .teclaPreta3{
+    color: white;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
 }
