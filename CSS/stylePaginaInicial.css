@@ -67,17 +67,3 @@ body {
     border: 1px solid white;
 }
 
-#play {
-    background-color: transparent;
-    border: none;
-    font-family: 'inter', sans-serif;
-    font-size: 25px ;
-    color: white;
-    cursor: pointer;
-}
-
-.teclaPreta1, .teclaPreta3{
-    color: white;
-    font-family: 'inter', sans-serif;
-    font-size: 20px;
-}
