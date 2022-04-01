@@ -11,28 +11,28 @@ h1.innerText = "PIANO-GENIUS"; //atribui titulo ao cabeçalho
 const sectionTeclasPretas = document.createElement('section');//cria section Teclas Pretas;
 sectionTeclasPretas.classList.add('teclas_pretas'); //atribui CLASS para o box teclas Pretas;
 
-const divTeclaPreta1 = document.createElement('div');// cria DIV tecla preta1
-divTeclaPreta1.classList.add('teclaPreta1'); // atribui CLASS teclaPreta1;
+const TeclaPreta1 = document.createElement('button');// cria DIV tecla preta1
+TeclaPreta1.classList.add('teclaPreta1'); // atribui CLASS teclaPreta1;
 
-const divTeclaPreta2 = document.createElement('div'); //cria div tecla preta2
-divTeclaPreta2.classList.add('teclaPreta2'); //atribui class tecla preta 2
+const TeclaPreta2 = document.createElement('button'); //cria div tecla preta2
+TeclaPreta2.classList.add('teclaPreta2'); //atribui class tecla preta 2
 
-const divTeclaPreta3 = document.createElement('div'); //cria div tecla preta3
-divTeclaPreta3.classList.add('teclaPreta3');//atribui class para tecla preta3
+const TeclaPreta3 = document.createElement('button'); //cria div tecla preta3
+TeclaPreta3.classList.add('teclaPreta3');//atribui class para tecla preta3
 
 const sectionContainerTeclado = document.createElement('section'); //cria section container teclas;
 sectionContainerTeclado.classList.add('container_teclado'); //atribui classe 'container_teclado'
 
-const tecla1 = document.createElement('div'); //cria div tecla1
+const tecla1 = document.createElement('button'); //cria div tecla1
 tecla1.classList.add('tecla1')// atribui class 'tecla1'
 
-const tecla2 = document.createElement('div'); //cria div tecla2
+const tecla2 = document.createElement('button'); //cria div tecla2
 tecla2.classList.add('tecla2'); //atribui class 'tecla2'
 
-const tecla3 = document.createElement('div'); //cria div tecla3
+const tecla3 = document.createElement('button'); //cria div tecla3
 tecla3.classList.add('tecla3'); //atribui class 'tecla3'
 
-const tecla4 = document.createElement('div'); //cria div tecla4
+const tecla4 = document.createElement('button'); //cria div tecla4
 tecla4.classList.add('tecla4'); //atribui class tecla4
 
 const sectionBoxResultado = document.createElement('section');// cria section box resultados
@@ -47,9 +47,9 @@ main.appendChild(sectionBoxResultado);//coloca box resultado como filha de main
 
 sectionCabecalho.appendChild(h1); //coloca h1 como filha de cabeçalho
 
-sectionTeclasPretas.appendChild(divTeclaPreta1); //coloca tecla como filha de sectionteclaspretas
-sectionTeclasPretas.appendChild(divTeclaPreta2);//coloca tecla como filha de sectionteclaspretas
-sectionTeclasPretas.appendChild(divTeclaPreta3); //coloca tecla como filha de sectionteclaspretas
+sectionTeclasPretas.appendChild(TeclaPreta1); //coloca tecla como filha de sectionteclaspretas
+sectionTeclasPretas.appendChild(TeclaPreta2);//coloca tecla como filha de sectionteclaspretas
+sectionTeclasPretas.appendChild(TeclaPreta3); //coloca tecla como filha de sectionteclaspretas
 
 sectionContainerTeclado.appendChild(tecla1); //coloca tecla como filha de container teclado
 sectionContainerTeclado.appendChild(tecla2); //coloca tecla como filha de container teclado
