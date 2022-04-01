@@ -13,10 +13,12 @@ body {
 
 #main{    
     margin-top: 100px;
+    height: 460px;
 }
 
 .cabecalho{
-    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
     font-family: 'inter', sans-serif;
     font-size: 20px;
 }
@@ -32,15 +34,20 @@ body {
 }
 
 .container_teclado{
-    display: inline-flex;
-    margin-top: -131px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    right: 712px;
+    top: 180px;
 }
 
 #box_resultados{
     background-color: var(--color-tabela-abaixo);
     width: 357px;
     height: 103px;
-    margin-top: 40px;
+    margin-left: 40%;
+    margin-top: 6%;;
 }
 
 .teclaPreta1, .teclaPreta2, .teclaPreta3 {
@@ -55,8 +62,6 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    
-
 }
 
 .tecla1:hover, .tecla2:hover, .tecla3:hover, .tecla4:hover {
