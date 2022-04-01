@@ -30,7 +30,6 @@ body {
     border: outset;
     margin: 5px;  
     cursor: pointer;
-
 }
 
 .container_teclado{
@@ -38,7 +37,7 @@ body {
     justify-content: center;
     position: absolute;
     z-index: -1;
-    right: 712px;
+    right: 704px;
     top: 180px;
 }
 
