@@ -1,6 +1,14 @@
-let vermelho = document.getElementsByClassName('tecla1');
-let amarelo = document.getElementsByClassName('tecla2');
-let verde = document.getElementsByClassName('tecla3');
-let azul = document.getElementsByClassName('tecla4');
+const vermelho = document.querySelector('.tecla1');
+const amarelo = document.querySelector('.tecla2');
+const verde = document.querySelector('.tecla3');
+const azul = document.querySelector('.tecla4');
 
-console.log(vermelho)
+const data = [vermelho, amarelo, verde, azul];
+
+
+function animaCores(botao, cor){
+    botao.classList.add(`animacao${cor}`)
+    setTimeout(()=>{
+        botao.classList.remove(`animacao${cor}`)
+    }, 1000)
+}
