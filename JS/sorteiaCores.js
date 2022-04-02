@@ -11,4 +11,7 @@ function animaCores(botao, cor){
     setTimeout(()=>{
         botao.classList.remove(`animacao${cor}`)
     }, 1000)
-}
+};
+
+
+

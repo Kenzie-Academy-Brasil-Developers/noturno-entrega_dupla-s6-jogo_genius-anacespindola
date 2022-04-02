@@ -32,8 +32,8 @@ body {
 }
 
 .container_teclado{
-    display: flex;
-    justify-content: center;
+    display:inline-flex;
+   margin-top: -131px;
 
 }
 
@@ -41,7 +41,7 @@ body {
     background-color: var(--color-tabela-abaixo);
     width: 357px;
     height: 103px;
-    margin-top: 6%;;
+    margin-top: 40px;;
 }
 
 .teclaPreta1, .teclaPreta2, .teclaPreta3 {
