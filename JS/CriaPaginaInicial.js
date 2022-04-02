@@ -60,3 +60,48 @@ sectionBoxResultado.appendChild(h2);
 }
 
 criandoTabela();
+
+let tamanho = 5; //tamanho vetor = a 5 para testes
+var arrayDaRodada = geraSequenciaAleatoria(tamanho);
+
+function geraNumeroAleatorio() {//Função que cria a sequencia de cores aleatóriamente
+    min = Math.ceil(1);
+    max = Math.floor(5);
+    return(Math.floor(Math.random() * (4)) + min);
+}
+function geraSequenciaAleatoria(tamanho) { 
+    let arraySequencia = [];
+    for(let i = 0; i != tamanho; i++){
+        arraySequencia[i] = geraNumeroAleatorio()
+    }
+    return arraySequencia
+}
+function trocaNumeroCor() {
+    function comparaNumero(element, index, array){
+        switch (element) {
+        case 1:
+            document.getElementsByClassName("tecla1")[0].style.backgroundColor = "var(--color-tecla-vermelho)";
+            break;
+        case 2:
+            document.getElementsByClassName("tecla2")[0].style.backgroundColor = "var(--color-tecla-amarelo)";
+            break;
+        case 3:
+            document.getElementsByClassName("tecla3")[0].style.backgroundColor = "var(--color-tecla-verde)";
+            break;
+        default:
+            document.getElementsByClassName("tecla4")[0].style.backgroundColor = "var(--color-tecla-azul)";
+        }
+    }
+    arrayDaRodada.forEach(comparaNumero);
+    console.log(arrayDaRodada);
+}
+trocaNumeroCor()
+
+//Função que escolhe a sequencia de cores aleatóriamente
+//função que checa se acertou ou errou
+
+//função que exibe painel de erro se errou
+
+//função que exibe quantidade de acertos
+
+//função que exibe painel de acertos se acertou

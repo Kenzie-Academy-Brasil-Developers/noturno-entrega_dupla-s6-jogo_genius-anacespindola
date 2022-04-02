@@ -1,9 +1,13 @@
+  
 :root {
     --color-background: #BF90D4;
     --color-tecla: #FFFBFB;
     --color-tecla-menor: #0F0E0E;
-    --color-tabela-abaixo: #7832AF;}
-
+    --color-tabela-abaixo: #7832AF;
+    --color-tecla-azul: #6F84F0;
+    --color-tecla-vermelho: #E26B6B;
+    --color-tecla-amarelo: #F0F365;
+    --color-tecla-verde: #78E276;}
 
 
 body {
@@ -35,17 +39,12 @@ body {
 .container_teclado{
     display: flex;
     justify-content: center;
-    position: absolute;
-    z-index: -1;
-    right: 704px;
-    top: 180px;
 }
 
 #box_resultados{
     background-color: var(--color-tabela-abaixo);
     width: 357px;
     height: 103px;
-    margin-left: 40%;
     margin-top: 6%;;
 }
 
@@ -61,6 +60,9 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    position: absolute;
+    z-index: 1;
+    right: 39%;
 }
 
 .tecla1:hover, .tecla2:hover, .tecla3:hover, .tecla4:hover {
