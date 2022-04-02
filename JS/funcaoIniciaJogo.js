@@ -11,7 +11,7 @@ function iniciaJogo(){
 }
 
 
-button.addEventListener('click', iniciaJogo);
+//button.addEventListener('click', iniciaJogo);
 
 
 
