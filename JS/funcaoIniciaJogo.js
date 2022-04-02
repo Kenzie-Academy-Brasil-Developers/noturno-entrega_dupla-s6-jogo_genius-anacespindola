@@ -10,7 +10,7 @@ function iniciaJogo(){
     sectionBoxResultado.appendChild(h2);
 }
 
-//button.addEventListener('click', iniciaJogo);
+button.addEventListener('click', iniciaJogo);
 
 
 
