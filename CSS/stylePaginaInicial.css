@@ -1,9 +1,13 @@
+  
 :root {
     --color-background: #BF90D4;
     --color-tecla: #FFFBFB;
     --color-tecla-menor: #0F0E0E;
-    --color-tabela-abaixo: #7832AF;}
-
+    --color-tabela-abaixo: #7832AF;
+    --color-tecla-azul: #6F84F0;
+    --color-tecla-vermelho: #E26B6B;
+    --color-tecla-amarelo: #F0F365;
+    --color-tecla-verde: #78E276;}
 
 
 body {
@@ -32,15 +36,16 @@ body {
 }
 
 .container_teclado{
-    display: inline-flex;
-    margin-top: -131px;
+    display: flex;
+    justify-content: center;
+
 }
 
 #box_resultados{
     background-color: var(--color-tabela-abaixo);
     width: 357px;
     height: 103px;
-    margin-top: 40px;
+    margin-top: 6%;;
 }
 
 .teclaPreta1, .teclaPreta2, .teclaPreta3 {
@@ -55,7 +60,6 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    
 
 }
 
