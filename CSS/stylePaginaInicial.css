@@ -1,13 +1,9 @@
-  
 :root {
     --color-background: #BF90D4;
     --color-tecla: #FFFBFB;
     --color-tecla-menor: #0F0E0E;
-    --color-tabela-abaixo: #7832AF;
-    --color-tecla-azul: #6F84F0;
-    --color-tecla-vermelho: #E26B6B;
-    --color-tecla-amarelo: #F0F365;
-    --color-tecla-verde: #78E276;}
+    --color-tabela-abaixo: #7832AF;}
+
 
 
 body {
@@ -17,12 +13,10 @@ body {
 
 #main{    
     margin-top: 100px;
-    height: 460px;
 }
 
 .cabecalho{
-    display: grid;
-    justify-content: center;
+    margin-bottom: 50px;
     font-family: 'inter', sans-serif;
     font-size: 20px;
 }
@@ -34,18 +28,19 @@ body {
     border: outset;
     margin: 5px;  
     cursor: pointer;
+
 }
 
 .container_teclado{
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    margin-top: -131px;
 }
 
 #box_resultados{
     background-color: var(--color-tabela-abaixo);
     width: 357px;
     height: 103px;
-    margin-top: 6%;;
+    margin-top: 40px;
 }
 
 .teclaPreta1, .teclaPreta2, .teclaPreta3 {
@@ -60,9 +55,8 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    position: absolute;
-    z-index: 1;
-    right: 39%;
+    
+
 }
 
 .tecla1:hover, .tecla2:hover, .tecla3:hover, .tecla4:hover {
@@ -71,4 +65,10 @@ body {
 
 .teclaPreta1:hover, .teclaPreta2:hover, .teclaPreta3:hover {
     border: 1px solid white;
+}
+
+h2{
+    font-family: 'inter',sans-serif;
+    color: white;
+    padding-top: 30px;
 }
