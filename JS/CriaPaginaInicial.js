@@ -76,16 +76,16 @@ function trocaNumeroCor() {
     function comparaNumero(element, index, array){
         switch (element) {
         case 1:
-            document.getElementsByClassName("tecla1")[0].style.backgroundColor = "var(--color-tecla-vermelho)";
+            document.getElementsByClassName("tecla1")[0].classList.add('brilhaVermelho');
             break;
         case 2:
-            document.getElementsByClassName("tecla2")[0].style.backgroundColor = "var(--color-tecla-amarelo)";
+            document.getElementsByClassName("tecla2")[0].classList.add('brilhaAmarelo');
             break;
         case 3:
-            document.getElementsByClassName("tecla3")[0].style.backgroundColor = "var(--color-tecla-verde)";
+            document.getElementsByClassName("tecla3")[0].classList.add('brilhaVerde');
             break;
         default:
-            document.getElementsByClassName("tecla4")[0].style.backgroundColor = "var(--color-tecla-azul)";
+            document.getElementsByClassName("tecla4")[0].classList.add('brilhaAzul');
         }
     }
     arrayDaRodada.forEach(comparaNumero);
