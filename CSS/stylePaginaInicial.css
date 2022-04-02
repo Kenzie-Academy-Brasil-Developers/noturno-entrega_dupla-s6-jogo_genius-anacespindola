@@ -32,25 +32,16 @@ body {
 }
 
 .container_teclado{
-<<<<<<< HEAD
-    display: inline-flex;
-    margin-top: -131px;
-=======
     display: flex;
     justify-content: center;
 
->>>>>>> e98f79c70551726dbf1858e55976308c65a5457b
 }
 
 #box_resultados{
     background-color: var(--color-tabela-abaixo);
     width: 357px;
     height: 103px;
-<<<<<<< HEAD
-    margin-top: 40px;
-=======
     margin-top: 6%;;
->>>>>>> e98f79c70551726dbf1858e55976308c65a5457b
 }
 
 .teclaPreta1, .teclaPreta2, .teclaPreta3 {
@@ -65,10 +56,6 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-<<<<<<< HEAD
-    
-=======
->>>>>>> e98f79c70551726dbf1858e55976308c65a5457b
 
 }
 
