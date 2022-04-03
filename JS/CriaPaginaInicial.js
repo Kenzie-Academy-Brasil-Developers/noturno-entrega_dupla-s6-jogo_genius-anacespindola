@@ -57,48 +57,62 @@ sectionContainerTeclado.appendChild(tecla4);//coloca tecla como filha de contain
 
 criandoTabela();
 
-let tamanho = 5; //tamanho vetor = a 5 para testes
-var arrayDaRodada = geraSequenciaAleatoria(tamanho);
+
+const vermelho  = document.querySelector('.tecla1');
+const amarelo = document.querySelector('.tecla2');
+const verde = document.querySelector('.tecla3');
+const azul = document.querySelector('.tecla4');
+
+const button = document.querySelector('.teclaPreta2');
+
+var arrayDaRodada = geraSequenciaAleatoria();
+
 
 function geraNumeroAleatorio() {//Função que cria a sequencia de cores aleatóriamente
-    min = Math.ceil(1);
-    max = Math.floor(5);
-    return(Math.floor(Math.random() * (4)) + min);
-}
-function geraSequenciaAleatoria(tamanho) { 
+  return (Math.floor(Math.random() * 4));   
+
+};
+
+function geraSequenciaAleatoria() { 
     let arraySequencia = [];
-    for(let i = 0; i != tamanho; i++){
-        arraySequencia[i] = geraNumeroAleatorio()
+    for(let i = 0; i < 5; i++){
+        arraySequencia[i] = geraNumeroAleatorio();
     }
-    return arraySequencia
-}
-function trocaNumeroCor() {
-    function comparaNumero(element, index, array){
-        switch (element) {
-        case 1:
-            document.getElementsByClassName("tecla1")[0].classList.add('brilhaVermelho');
-            break;
-        case 2:
-            document.getElementsByClassName("tecla2")[0].classList.add('brilhaAmarelo');
-            break;
-        case 3:
-            document.getElementsByClassName("tecla3")[0].classList.add('brilhaVerde');
-            break;
-        default:
-            document.getElementsByClassName("tecla4")[0].classList.add('brilhaAzul');
-        }
+    return arraySequencia;
+};
+
+
+function brilhandoCores(){
+    
+    for(let j=0; j < arrayDaRodada.length; j++){
+    if(arrayDaRodada[j] === 0){
+     const interv1 = setTimeout(() => {vermelho.setAttribute('id','brilhaVermelho')},j * 1000);
+     vermelho.removeAttribute('id');
+    }else if(arrayDaRodada[j]  === 1){
+       const interv2 = setTimeout(() => {amarelo.setAttribute('id','brilhaAmarelo')},j * 1000);
+       amarelo.removeAttribute('id');
+    } else if(arrayDaRodada[j]  === 2){
+        const interv3 = setTimeout(() => {verde.setAttribute('id','brilhaVerde')}, j * 1000);
+        verde.removeAttribute('id');
+    }else if(arrayDaRodada[j] === 3) {
+        const interv4 = setTimeout(()=>{azul.setAttribute('id','brilhaAzul')}, j * 1000);
+        azul.removeAttribute('id');
     }
-    arrayDaRodada.forEach(comparaNumero);
-    console.log(arrayDaRodada);
 }
-trocaNumeroCor()
+}
 
-//Função que escolhe a sequencia de cores aleatóriamente
-//função que checa se acertou ou errou
 
-//função que exibe painel de erro se errou
+function iniciaJogo(){
+    const sectionBoxResultado = document.createElement('section');// cria section box resultados
+    sectionBoxResultado.setAttribute('id' , 'box_resultados'); //atribui class 'box_resultados'
+    const h2 = document.createElement('h2');//cria h2 box resultados;
+    h2.innerText = 'Prepare-se!!!'; 
+    main.appendChild(sectionBoxResultado);//coloca box resultado como filha de main
+    sectionBoxResultado.appendChild(h2); 
 
-//função que exibe quantidade de acertos
+   setTimeout(brilhandoCores, 2000);
+};
 
-//função que exibe painel de acertos se acertou
+button.addEventListener("click", iniciaJogo);
+
 

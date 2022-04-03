@@ -16,22 +16,22 @@
 }
 
 
-.brilhaVermelho {
+#brilhaVermelho {
     animation-name: tecla1--brilha;
     animation-duration: 1s;
 }
 
-.brilhaAmarelo{
+#brilhaAmarelo{
     animation-name: tecla2--brilha;
     animation-duration: 1s;
 }
 
-.brilhaVerde{
+#brilhaVerde{
     animation-name: tecla3--brilha;
     animation-duration: 1s;
 }
 
-.brilhaAzul {
+#brilhaAzul {
      animation-name: tecla4--brilha;
      animation-duration: 1s;
 }
